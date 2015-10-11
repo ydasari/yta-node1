@@ -1,0 +1,40 @@
+<div class="container registration-container">
+    <div class="card registration-container__card">
+      <div class="card-content">
+        <h3 class="center-align registration-container__title">Registration Forms</h3>
+        <form name="registrationForm" class="registration-form" novalidate>
+          <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_first_name" type="text" name="fName" ng-model="fName" required>
+            <label for="icon_first_name">First Name</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="icon_last_name" type="text" name="lName" ng-model="lName" required>
+            <label for="icon_last_name">Last Name</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">email_circle</i>
+            <input id="icon_email" type="email" name="userEmail" ng-model="userEmail" required>
+            <label for="icon_email">Email</label>
+          </div>
+          <span class="registration-form__email-error" ng-show="registrationForm.userEmail.$dirty && registrationForm.userEmail.$error.email">Invalid Email</span>
+          <div class="input-field">
+            <i class="material-icons prefix">lock_circle</i>
+            <input id="icon_password" type="password" name="userPassword" ng-model="userPassword" required>
+            <label for="icon_password">Password</label>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix">lock_circle</i>
+            <input id="icon_confirm_password" type="password" name"confirmPassword" ng-model="confirmPassword" required>
+            <label for="icon_confirm_password">Confirm Password</label>
+          </div>
+          <h6 class="right-align registration-form__fields-required" ng-hide="registrationForm.fName.$valid&&registrationForm.lName.$valid&&registrationForm.userEmail.$valid&&registrationForm.userPassword.$valid">All fields are required</h6>
+          <a href="" class="btn btn-block registration-form__submit-btn"  ng-click="createUser()" ng-disabled="registrationForm.lName.$invalid">Sign Up</a>
+        </form>
+      </div>
+      <div class="registration-container__footer">
+        <i class="center-align"><a href="" >Already a Member? Click here to login</a></i>
+      </div>
+    </div>
+  </div>
