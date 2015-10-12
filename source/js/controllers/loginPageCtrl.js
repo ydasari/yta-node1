@@ -6,7 +6,7 @@ app.controller('loginPageCtrl', ['$scope', 'authFactory', '$location', function(
 				$location.path('/userHomePage');
 			}
 			else{
-				console.log("invalid credentials! Please enter user@gmail.com as username and password as password");
+				console.log("Email or password! incorrect! Please enter user@gmail.com as username and password as password");
 			}
 		});
 	};

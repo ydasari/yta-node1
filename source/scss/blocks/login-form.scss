@@ -1,0 +1,32 @@
+@media only screen and (min-width:993px){
+
+.login-container{
+
+      width:40%;
+      margin:0 auto;
+      margin-top:100px;
+    }
+    .login-container__card{
+      
+      border-top:5px solid green;
+    }
+    .login-container__title{
+      margin-bottom: 50px;
+    }
+    .login-form__submit-btn{
+      margin:50px 0;
+
+    }
+    
+    .login-form__fields-required{
+      color:red;
+      font-size: 18px;
+    }
+    .login-form__email-error{
+      color:red;
+      font-size: 16px;
+      margin-left:40px;
+      margin-top:-20px;
+    }
+
+}
