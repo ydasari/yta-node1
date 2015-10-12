@@ -2,6 +2,7 @@
 <div class="container login-container">
     <div class="card login-container__card">
       <div class="card-content">
+       
         <h3 class="center-align login-container__title">Sign In!</h3>
         <form name="loginForm" class="login-form" novalidate>
           <div class="input-field">
@@ -9,16 +10,17 @@
             <input id="icon_email" type="email" name="userEmail" ng-model="userEmail" required>
             <label for="icon_email">Email</label>
            </div> 
-            <span style="color:red" class="login-form__email-error" ng-show="loginForm.userEmail.$dirty && loginForm.userEmail.$error.email">Invalid Email</span>
+            <span  class="login-form__email-error" ng-show="loginForm.userEmail.$dirty && loginForm.userEmail.$error.email">Invalid Email</span>
             <div class="input-field">
             <i class="material-icons prefix">lock_circle</i>
             <input id="icon_password" type="password" name="userPassword" ng-model="userPassword" required>
             <label for="icon_password">Password</label>
           
           </div>
-          <h6 style="color:red" class="right-align login-form__fields-required" ng-hide="loginForm.userEmail.$valid&&loginForm.userPassword.$valid">All fields are required</h6>
+          <h6  class="right-align login-form__fields-required" ng-hide="loginForm.userEmail.$valid&&loginForm.userPassword.$valid">All fields are required</h6>
           <a href="" class="btn btn-block login-form__submit-btn" ng-click="checkLoginDetails()" >Sign In</a>
         </form>
       </div>
     </div>
+    
 </div> 
