@@ -15,8 +15,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 		})
 		.state('userHomePage',{
 			url:'/userHomePage',
-			templateUrl:'userHomePage.html',
-			controller: 'userHomePage'
+			templateUrl:'userHomePage.html'
 		});
 		$urlRouterProvider.otherwise('/');
 });
