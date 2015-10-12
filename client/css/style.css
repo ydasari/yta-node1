@@ -35,5 +35,8 @@
 
 body {
   background: #ff6f00; }
-
+.input-field{
+  background-color:black;
+  height:50px;
+}
 /*# sourceMappingURL=style.css.map */
